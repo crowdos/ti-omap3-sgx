@@ -6,7 +6,10 @@ Build-Depends: debhelper (>= 9),
                qt5-qmake,
                libwayland-dev,
                pkg-config,
-               quilt
+               quilt,
+               libx11-6,
+               libxext6,
+               libxfixes3,
 Standards-Version: 3.9.6
 
 Package: libpvr-ti-omap3-sgx-core
