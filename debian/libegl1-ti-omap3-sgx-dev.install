@@ -1,0 +1,4 @@
+usr/include/EGL/egl.h
+usr/include/EGL/eglext.h
+usr/include/EGL/eglplatform.h
+usr/include/KHR/khrplatform.h

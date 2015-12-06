@@ -1,0 +1,34 @@
+#!/usr/bin/make -f
+
+# Uncomment this to turn on verbose mode.
+#export DH_VERBOSE=1
+
+#export CXXFLAGS="$CFLAGS -I.././ti-omap3-sgx/usr/include/"
+
+%:
+	dh $@ --sourcedirectory=ti-omap3-sgx-wayland-wsegl --with=quilt
+
+override_dh_auto_configure:
+	cd ti-omap3-sgx-wayland-wsegl && qmake CXXFLAGS="$(CXXFLAGS) -I../.././ti-omap3-sgx/usr/include/"
+
+override_dh_install:
+	mkdir -p debian/tmp/
+	cp -a ti-omap3-sgx/usr debian/tmp/
+	rm -rf debian/tmp/usr/lib/libglslcompiler.so
+	rm -rf debian/tmp/usr/lib/libpvr2d.so
+	rm -rf debian/tmp/usr/lib/libPVRScopeServices.so
+	rm -rf debian/tmp/usr/lib/libsrv_um.so
+	rm -rf debian/tmp/usr/lib/libpvrPVR2D_X11WSEGL.so
+	rm -rf debian/tmp/usr/lib/libpvrPVR2D_FLIPWSEGL.so
+	rm -rf debian/tmp/usr/lib/libpvrPVR2D_DRI2WSEGL.so
+	rm -rf debian/tmp/usr/lib/libpvrPVR2D_BLITWSEGL.so
+	rm -rf debian/tmp/usr/lib/libpvrPVR2D_FRONTWSEGL.so
+	rm -rf debian/tmp/usr/lib/libIMGegl.so
+	rm -rf debian/tmp/usr/lib/libOpenVG.so
+	rm -rf debian/tmp/usr/lib/libOpenVGU.so
+	rm -rf debian/tmp/usr/lib/libGLESv2.so
+	rm -rf debian/tmp/usr/lib/libEGL.so
+	rm -rf debian/tmp/usr/lib/libGLES_CM.so
+	rm -rf debian/tmp/usr/share/doc/ti-omap3-sgx-bin-1.4.268/license.txt
+	find debian/tmp -name "*r121*" | xargs rm -f
+	dh_install --fail-missing

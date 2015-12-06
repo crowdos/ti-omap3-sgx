@@ -1,0 +1,11 @@
+usr/lib/libglslcompiler_r125.so usr/lib/libglslcompiler.so
+usr/lib/libpvr2d_r125.so usr/lib/libpvr2d.so
+usr/lib/libPVRScopeServices_r125.so usr/lib/libPVRScopeServices.so
+usr/lib/libsrv_um_r125.so usr/lib/libsrv_um.so
+usr/lib/libpvrPVR2D_X11WSEGL_r125.so usr/lib/libpvrPVR2D_X11WSEGL.so
+usr/lib/libpvrPVR2D_FLIPWSEGL_r125.so usr/lib/libpvrPVR2D_FLIPWSEGL.so
+usr/lib/libpvrPVR2D_DRI2WSEGL_r125.so usr/lib/libpvrPVR2D_DRI2WSEGL.so
+usr/lib/libpvrPVR2D_BLITWSEGL_r125.so usr/lib/libpvrPVR2D_BLITWSEGL.so
+usr/lib/libpvrPVR2D_FRONTWSEGL_r125.so usr/lib/libpvrPVR2D_FRONTWSEGL.so
+usr/lib/libOpenVGU_r125.so usr/lib/libOpenVGU.so
+usr/lib/libOpenVG_r125.so usr/lib/libOpenVG.so

@@ -1,0 +1,90 @@
+Source: ti-omap3-sgx
+Section: x11
+Priority: optional
+Maintainer: Mohammed Sameer <msameer@foolab.org>
+Build-Depends: debhelper (>= 9),
+               qt5-qmake,
+               libwayland-dev,
+               pkg-config,
+               quilt
+Standards-Version: 3.9.6
+
+Package: libpvr-ti-omap3-sgx-core
+Architecture: armhf
+Depends: ${misc:Depends},
+         ${shlibs:Depends},
+Description: ImgTec SGX drivers for TI OMAP3 - core libraries
+ This package contains OMAP3 SGX core libraries
+
+Package: libpvr-ti-omap3-sgx-core-dev
+Architecture: armhf
+Depends: ${misc:Depends},
+         ${shlibs:Depends},
+         libpvr-ti-omap3-sgx-core (= ${binary:Version})
+Description: ImgTec SGX drivers for TI OMAP3 - core libraries development files
+ This package contains OMAP3 SGX core libraries
+ .
+ This package contains the development files for OMAP3 SGX core libraries
+
+Package: libgles1-ti-omap3-sgx
+Architecture: armhf
+Provides: libgles1
+Replaces: libgles1
+Conflicts: libgles1
+Depends: ${misc:Depends},
+         ${shlibs:Depends},
+         libpvr-ti-omap3-sgx-core (= ${binary:Version})
+Description: ImgTec SGX drivers for TI OMAP3 - GLES1
+ This package contains OMAP3 GLES1 library
+
+Package: libgles1-ti-omap3-sgx-dev
+Architecture: armhf
+Depends: ${misc:Depends},
+         ${shlibs:Depends},
+         libgles1-ti-omap3-sgx (= ${binary:Version})
+Description: ImgTec SGX drivers for TI OMAP3 - GLES1
+ This package contains OMAP3 GLES1 library
+ .
+ This package contains the development files for GLES1
+
+Package: libgles2-ti-omap3-sgx
+Architecture: armhf
+Provides: libgles2
+Replaces: libgles2
+Conflicts: libgles2
+Depends: ${misc:Depends},
+         ${shlibs:Depends},
+         libpvr-ti-omap3-sgx-core (= ${binary:Version})
+Description: ImgTec SGX drivers for TI OMAP3 - GLES2
+ This package contains OMAP3 GLES2 library
+
+Package: libgles2-ti-omap3-sgx-dev
+Architecture: armhf
+Depends: ${misc:Depends},
+         ${shlibs:Depends},
+         libgles2-ti-omap3-sgx (= ${binary:Version})
+Description: ImgTec SGX drivers for TI OMAP3 - GLES2
+ This package contains OMAP3 GLES2 library
+ .
+ This package contains the development files for GLES2
+
+Package: libegl1-ti-omap3-sgx
+Architecture: armhf
+Provides: libegl1
+Replaces: libegl1
+Conflicts: libegl1
+Depends: ${misc:Depends},
+         ${shlibs:Depends},
+         libpvr-ti-omap3-sgx-core (= ${binary:Version})
+Description: ImgTec SGX drivers for TI OMAP3 - EGL
+ This package contains OMAP3 EGL library
+
+Package: libegl1-ti-omap3-sgx-dev
+Architecture: armhf
+Depends: ${misc:Depends},
+         ${shlibs:Depends},
+         libegl1-ti-omap3-sgx (= ${binary:Version})
+Description: ImgTec SGX drivers for TI OMAP3 - EGL
+ This package contains OMAP3 EGL library
+ .
+ This package contains the development files for EGL
