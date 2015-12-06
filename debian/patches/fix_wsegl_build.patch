@@ -1,0 +1,8 @@
+--- a/ti-omap3-sgx-wayland-wsegl/common/common.pri
++++ b/ti-omap3-sgx-wayland-wsegl/common/common.pri
+@@ -17,3 +17,5 @@
+            INCLUDEPATH += $$PWD
+ 
+ 
++INCLUDEPATH += ../../ti-omap3-sgx/usr/include/
++LIBS += -L../../ti-omap3-sgx/usr/lib/

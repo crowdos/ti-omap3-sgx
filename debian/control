@@ -20,7 +20,11 @@ Package: libpvr-ti-omap3-sgx-core-dev
 Architecture: armhf
 Depends: ${misc:Depends},
          ${shlibs:Depends},
-         libpvr-ti-omap3-sgx-core (= ${binary:Version})
+         libpvr-ti-omap3-sgx-core (= ${binary:Version}),
+         libgles1-ti-omap3-sgx-dev (= ${binary:Version}),
+         libgles2-ti-omap3-sgx-dev (= ${binary:Version}),
+         libegl1-ti-omap3-sgx-dev (= ${binary:Version}),
+         libwayland-egl1-ti-omap3-sgx (= ${binary:Version}),
 Description: ImgTec SGX drivers for TI OMAP3 - core libraries development files
  This package contains OMAP3 SGX core libraries
  .
@@ -88,3 +92,15 @@ Description: ImgTec SGX drivers for TI OMAP3 - EGL
  This package contains OMAP3 EGL library
  .
  This package contains the development files for EGL
+
+Package: libwayland-egl1-ti-omap3-sgx
+Architecture: armhf
+Provides: libwayland-egl1
+Replaces: libwayland-egl1
+Conflicts: libwayland-egl1
+Depends: ${misc:Depends},
+         ${shlibs:Depends},
+         libpvr-ti-omap3-sgx-core (= ${binary:Version}),
+         libegl1-ti-omap3-sgx-dev (= ${binary:Version}),
+Description: ImgTec SGX drivers for TI OMAP3 - wayland EGL
+ This package contains OMAP3 wayland EGL library

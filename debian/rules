@@ -13,6 +13,8 @@ override_dh_auto_configure:
 
 override_dh_install:
 	mkdir -p debian/tmp/
+	# We will overwrite our compiled libEGL.so so we will create the
+	# needed links in libegl1-ti-omap3-sgx-dev.links
 	cp -a ti-omap3-sgx/usr debian/tmp/
 	rm -rf debian/tmp/usr/lib/libglslcompiler.so
 	rm -rf debian/tmp/usr/lib/libpvr2d.so

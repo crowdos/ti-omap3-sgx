@@ -1,3 +1,4 @@
+usr/lib/libwayland-egl.so
 usr/include/pvr2d.h
 usr/include/SGX/hwdefs/sgxmmu.h
 usr/include/SGX/hwdefs/usecodegen.h

@@ -11,3 +11,4 @@ usr/lib/libpvrPVR2D_BLITWSEGL_r125.so
 usr/lib/libpvrPVR2D_FRONTWSEGL_r125.so
 usr/lib/libOpenVGU_r125.so
 usr/lib/libOpenVG_r125.so
+usr/lib/waylandwsegl.so
