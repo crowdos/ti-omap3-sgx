@@ -1,0 +1,3 @@
+[submodule "ti-omap3-sgx"]
+	path = ti-omap3-sgx
+	url = git@github.com:nemomobile/ti-omap3-sgx.git
