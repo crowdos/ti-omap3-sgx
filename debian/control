@@ -104,6 +104,5 @@ Conflicts: libwayland-egl1
 Depends: ${misc:Depends},
          ${shlibs:Depends},
          libpvr-ti-omap3-sgx-core (= ${binary:Version}),
-         libegl1-ti-omap3-sgx-dev (= ${binary:Version}),
 Description: ImgTec SGX drivers for TI OMAP3 - wayland EGL
  This package contains OMAP3 wayland EGL library
