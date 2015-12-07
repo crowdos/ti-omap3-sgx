@@ -77,9 +77,9 @@ Description: ImgTec SGX drivers for TI OMAP3 - GLES2
 
 Package: libegl1-ti-omap3-sgx
 Architecture: armhf
-Provides: libegl1
-Replaces: libegl1
-Conflicts: libegl1
+Provides: libegl1-x11
+Replaces: libegl1-x11
+Conflicts: libegl1-x11
 Depends: ${misc:Depends},
          ${shlibs:Depends},
          libpvr-ti-omap3-sgx-core (= ${binary:Version})
