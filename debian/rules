@@ -33,6 +33,7 @@ override_dh_install:
 	rm -rf debian/tmp/usr/lib/libGLES_CM.so
 	rm -rf debian/tmp/usr/share/doc/ti-omap3-sgx-bin-1.4.268/license.txt
 	find debian/tmp -name "*r121*" | xargs rm -f
+	mv debian/tmp/usr/sbin/pvrsrvinit_r125 debian/tmp/usr/sbin/pvrsrvinit
 	mkdir -p debian/tmp/etc/
 	cp debian/powervr.ini debian/tmp/etc/powervr.ini
 	dh_install --fail-missing
