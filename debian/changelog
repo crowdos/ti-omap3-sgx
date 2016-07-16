@@ -1,3 +1,10 @@
+ti-omap3-sgx (0.20160717.0) unstable; urgency=medium
+
+  * [f986edd] use versioned build dependency on qt5-qmake
+  * [1460ea4] Add gbp configuration
+
+ -- Mohammed Sameer <msameer@debian.org>  Sun, 17 Jul 2016 00:47:51 +0300
+
 ti-omap3-sgx (0.20151206.0) unstable; urgency=medium
 
   * Initial release.
