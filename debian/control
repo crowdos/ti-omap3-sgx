@@ -3,7 +3,7 @@ Section: x11
 Priority: optional
 Maintainer: Mohammed Sameer <msameer@foolab.org>
 Build-Depends: debhelper (>= 9),
-               qt5-qmake,
+               qt5-qmake (>= 5.5.1-),
                libwayland-dev,
                pkg-config,
                quilt,
